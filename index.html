@@ -1,0 +1,137 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>transpose</title></head><body>
+<h1>Transpose solutions</h1>
+<p>cache: s=5 E=1 b=5</p>
+
+<h2>32x32</h2>
+<table border="1" cellpadding="6" cellspacing="0">
+<tr><th>#</th><th>name</th><th>valid</th><th>misses</th><th>error</th><th>report</th></tr>
+
+<tr><td>1</td><td>tiled8regbuf</td><td>&#10003;</td><td>284</td><td></td><td><a href="tiled8regbuf-32x32.html">tiled8regbuf-32x32.html</a></td></tr>
+
+<tr><td>2</td><td>zorder-mod2-rev2-generic</td><td>&#10003;</td><td>316</td><td></td><td><a href="zorder-mod2-rev2-generic-32x32.html">zorder-mod2-rev2-generic-32x32.html</a></td></tr>
+
+<tr><td>3</td><td>tiled8sb4rev2-generic</td><td>&#10003;</td><td>316</td><td></td><td><a href="tiled8sb4rev2-generic-32x32.html">tiled8sb4rev2-generic-32x32.html</a></td></tr>
+
+<tr><td>4</td><td>hilbert-order-mod2-rev2-generic</td><td>&#10003;</td><td>316</td><td></td><td><a href="hilbert-order-mod2-rev2-generic-32x32.html">hilbert-order-mod2-rev2-generic-32x32.html</a></td></tr>
+
+<tr><td>5</td><td>tiled8</td><td>&#10003;</td><td>340</td><td></td><td><a href="tiled8-32x32.html">tiled8-32x32.html</a></td></tr>
+
+<tr><td>6</td><td>hilbert-order</td><td>&#10003;</td><td>370</td><td></td><td><a href="hilbert-order-32x32.html">hilbert-order-32x32.html</a></td></tr>
+
+<tr><td>7</td><td>zorder</td><td>&#10003;</td><td>420</td><td></td><td><a href="zorder-32x32.html">zorder-32x32.html</a></td></tr>
+
+<tr><td>8</td><td>tiled16x4</td><td>&#10003;</td><td>460</td><td></td><td><a href="tiled16x4-32x32.html">tiled16x4-32x32.html</a></td></tr>
+
+<tr><td>9</td><td>regbuf</td><td>&#10003;</td><td>1152</td><td></td><td><a href="regbuf-32x32.html">regbuf-32x32.html</a></td></tr>
+
+<tr><td>10</td><td>tiled16</td><td>&#10003;</td><td>1180</td><td></td><td><a href="tiled16-32x32.html">tiled16-32x32.html</a></td></tr>
+
+<tr><td>11</td><td>row-wise</td><td>&#10003;</td><td>1180</td><td></td><td><a href="row-wise-32x32.html">row-wise-32x32.html</a></td></tr>
+
+<tr><td>12</td><td>tiled8sb4</td><td>&#10007;</td><td>0</td><td>panic: runtime error: index out of range [1024] with length 1024</td><td><a href="tiled8sb4-32x32.html">tiled8sb4-32x32.html</a></td></tr>
+
+<tr><td>13</td><td>tiled8sb4rev2</td><td>&#10007;</td><td>0</td><td>panic: runtime error: index out of range [1024] with length 1024</td><td><a href="tiled8sb4rev2-32x32.html">tiled8sb4rev2-32x32.html</a></td></tr>
+
+<tr><td>14</td><td>hilbert-order-mod2-rev2</td><td>&#10007;</td><td>0</td><td>panic: runtime error: index out of range [1056] with length 1024</td><td><a href="hilbert-order-mod2-rev2-32x32.html">hilbert-order-mod2-rev2-32x32.html</a></td></tr>
+
+<tr><td>15</td><td>hilbert-order-mod2</td><td>&#10007;</td><td>0</td><td>panic: runtime error: index out of range [1056] with length 1024</td><td><a href="hilbert-order-mod2-32x32.html">hilbert-order-mod2-32x32.html</a></td></tr>
+
+<tr><td>16</td><td>zorder-mod1</td><td>&#10007;</td><td>0</td><td>panic: runtime error: index out of range [1056] with length 1024</td><td><a href="zorder-mod1-32x32.html">zorder-mod1-32x32.html</a></td></tr>
+
+<tr><td>17</td><td>zorder-mod2</td><td>&#10007;</td><td>0</td><td>panic: runtime error: index out of range [1056] with length 1024</td><td><a href="zorder-mod2-32x32.html">zorder-mod2-32x32.html</a></td></tr>
+
+<tr><td>18</td><td>zorder-mod2-rev2</td><td>&#10007;</td><td>0</td><td>panic: runtime error: index out of range [1056] with length 1024</td><td><a href="zorder-mod2-rev2-32x32.html">zorder-mod2-rev2-32x32.html</a></td></tr>
+
+<tr><td>19</td><td>hilbert-order-mod1</td><td>&#10007;</td><td>0</td><td>panic: runtime error: index out of range [1056] with length 1024</td><td><a href="hilbert-order-mod1-32x32.html">hilbert-order-mod1-32x32.html</a></td></tr>
+
+</table>
+
+<h2>61x67</h2>
+<table border="1" cellpadding="6" cellspacing="0">
+<tr><th>#</th><th>name</th><th>valid</th><th>misses</th><th>error</th><th>report</th></tr>
+
+<tr><td>1</td><td>tiled16x4</td><td>&#10003;</td><td>1969</td><td></td><td><a href="tiled16x4-61x67.html">tiled16x4-61x67.html</a></td></tr>
+
+<tr><td>2</td><td>tiled16</td><td>&#10003;</td><td>2005</td><td></td><td><a href="tiled16-61x67.html">tiled16-61x67.html</a></td></tr>
+
+<tr><td>3</td><td>tiled8regbuf</td><td>&#10003;</td><td>2065</td><td></td><td><a href="tiled8regbuf-61x67.html">tiled8regbuf-61x67.html</a></td></tr>
+
+<tr><td>4</td><td>hilbert-order</td><td>&#10003;</td><td>2115</td><td></td><td><a href="hilbert-order-61x67.html">hilbert-order-61x67.html</a></td></tr>
+
+<tr><td>5</td><td>zorder</td><td>&#10003;</td><td>2120</td><td></td><td><a href="zorder-61x67.html">zorder-61x67.html</a></td></tr>
+
+<tr><td>6</td><td>hilbert-order-mod2-rev2-generic</td><td>&#10003;</td><td>2149</td><td></td><td><a href="hilbert-order-mod2-rev2-generic-61x67.html">hilbert-order-mod2-rev2-generic-61x67.html</a></td></tr>
+
+<tr><td>7</td><td>tiled8sb4rev2-generic</td><td>&#10003;</td><td>2153</td><td></td><td><a href="tiled8sb4rev2-generic-61x67.html">tiled8sb4rev2-generic-61x67.html</a></td></tr>
+
+<tr><td>8</td><td>zorder-mod2-rev2-generic</td><td>&#10003;</td><td>2166</td><td></td><td><a href="zorder-mod2-rev2-generic-61x67.html">zorder-mod2-rev2-generic-61x67.html</a></td></tr>
+
+<tr><td>9</td><td>tiled8</td><td>&#10003;</td><td>2222</td><td></td><td><a href="tiled8-61x67.html">tiled8-61x67.html</a></td></tr>
+
+<tr><td>10</td><td>row-wise</td><td>&#10003;</td><td>4706</td><td></td><td><a href="row-wise-61x67.html">row-wise-61x67.html</a></td></tr>
+
+<tr><td>11</td><td>tiled8sb4rev2</td><td>&#10007;</td><td>0</td><td>panic: runtime error: index out of range [4087] with length 4087</td><td><a href="tiled8sb4rev2-61x67.html">tiled8sb4rev2-61x67.html</a></td></tr>
+
+<tr><td>12</td><td>tiled8sb4</td><td>&#10007;</td><td>0</td><td>panic: runtime error: index out of range [4087] with length 4087</td><td><a href="tiled8sb4-61x67.html">tiled8sb4-61x67.html</a></td></tr>
+
+<tr><td>13</td><td>hilbert-order-mod2</td><td>&#10007;</td><td>0</td><td>panic: runtime error: index out of range [4143] with length 4087</td><td><a href="hilbert-order-mod2-61x67.html">hilbert-order-mod2-61x67.html</a></td></tr>
+
+<tr><td>14</td><td>hilbert-order-mod2-rev2</td><td>&#10007;</td><td>0</td><td>panic: runtime error: index out of range [4143] with length 4087</td><td><a href="hilbert-order-mod2-rev2-61x67.html">hilbert-order-mod2-rev2-61x67.html</a></td></tr>
+
+<tr><td>15</td><td>hilbert-order-mod1</td><td>&#10007;</td><td>0</td><td>panic: runtime error: index out of range [4143] with length 4087</td><td><a href="hilbert-order-mod1-61x67.html">hilbert-order-mod1-61x67.html</a></td></tr>
+
+<tr><td>16</td><td>zorder-mod1</td><td>&#10007;</td><td>0</td><td>panic: runtime error: index out of range [4143] with length 4087</td><td><a href="zorder-mod1-61x67.html">zorder-mod1-61x67.html</a></td></tr>
+
+<tr><td>17</td><td>zorder-mod2</td><td>&#10007;</td><td>0</td><td>panic: runtime error: index out of range [4143] with length 4087</td><td><a href="zorder-mod2-61x67.html">zorder-mod2-61x67.html</a></td></tr>
+
+<tr><td>18</td><td>zorder-mod2-rev2</td><td>&#10007;</td><td>0</td><td>panic: runtime error: index out of range [4143] with length 4087</td><td><a href="zorder-mod2-rev2-61x67.html">zorder-mod2-rev2-61x67.html</a></td></tr>
+
+<tr><td>19</td><td>regbuf</td><td>&#10007;</td><td>0</td><td>panic: runtime error: index out of range [4087] with length 4087</td><td><a href="regbuf-61x67.html">regbuf-61x67.html</a></td></tr>
+
+</table>
+
+<h2>64x64</h2>
+<table border="1" cellpadding="6" cellspacing="0">
+<tr><th>#</th><th>name</th><th>valid</th><th>misses</th><th>error</th><th>report</th></tr>
+
+<tr><td>1</td><td>tiled8sb4rev2</td><td>&#10003;</td><td>1224</td><td></td><td><a href="tiled8sb4rev2-64x64.html">tiled8sb4rev2-64x64.html</a></td></tr>
+
+<tr><td>2</td><td>tiled8sb4rev2-generic</td><td>&#10003;</td><td>1224</td><td></td><td><a href="tiled8sb4rev2-generic-64x64.html">tiled8sb4rev2-generic-64x64.html</a></td></tr>
+
+<tr><td>3</td><td>hilbert-order-mod2-rev2-generic</td><td>&#10003;</td><td>1448</td><td></td><td><a href="hilbert-order-mod2-rev2-generic-64x64.html">hilbert-order-mod2-rev2-generic-64x64.html</a></td></tr>
+
+<tr><td>4</td><td>hilbert-order-mod2-rev2</td><td>&#10003;</td><td>1448</td><td></td><td><a href="hilbert-order-mod2-rev2-64x64.html">hilbert-order-mod2-rev2-64x64.html</a></td></tr>
+
+<tr><td>5</td><td>hilbert-order-mod2</td><td>&#10003;</td><td>1456</td><td></td><td><a href="hilbert-order-mod2-64x64.html">hilbert-order-mod2-64x64.html</a></td></tr>
+
+<tr><td>6</td><td>hilbert-order</td><td>&#10003;</td><td>1660</td><td></td><td><a href="hilbert-order-64x64.html">hilbert-order-64x64.html</a></td></tr>
+
+<tr><td>7</td><td>zorder-mod2-rev2-generic</td><td>&#10003;</td><td>1672</td><td></td><td><a href="zorder-mod2-rev2-generic-64x64.html">zorder-mod2-rev2-generic-64x64.html</a></td></tr>
+
+<tr><td>8</td><td>zorder-mod2-rev2</td><td>&#10003;</td><td>1672</td><td></td><td><a href="zorder-mod2-rev2-64x64.html">zorder-mod2-rev2-64x64.html</a></td></tr>
+
+<tr><td>9</td><td>zorder-mod2</td><td>&#10003;</td><td>1680</td><td></td><td><a href="zorder-mod2-64x64.html">zorder-mod2-64x64.html</a></td></tr>
+
+<tr><td>10</td><td>tiled8sb4</td><td>&#10003;</td><td>1680</td><td></td><td><a href="tiled8sb4-64x64.html">tiled8sb4-64x64.html</a></td></tr>
+
+<tr><td>11</td><td>hilbert-order-mod1</td><td>&#10003;</td><td>1696</td><td></td><td><a href="hilbert-order-mod1-64x64.html">hilbert-order-mod1-64x64.html</a></td></tr>
+
+<tr><td>12</td><td>tiled16x4</td><td>&#10003;</td><td>1840</td><td></td><td><a href="tiled16x4-64x64.html">tiled16x4-64x64.html</a></td></tr>
+
+<tr><td>13</td><td>zorder-mod1</td><td>&#10003;</td><td>1920</td><td></td><td><a href="zorder-mod1-64x64.html">zorder-mod1-64x64.html</a></td></tr>
+
+<tr><td>14</td><td>zorder</td><td>&#10003;</td><td>2016</td><td></td><td><a href="zorder-64x64.html">zorder-64x64.html</a></td></tr>
+
+<tr><td>15</td><td>tiled8regbuf</td><td>&#10003;</td><td>4608</td><td></td><td><a href="tiled8regbuf-64x64.html">tiled8regbuf-64x64.html</a></td></tr>
+
+<tr><td>16</td><td>regbuf</td><td>&#10003;</td><td>4608</td><td></td><td><a href="regbuf-64x64.html">regbuf-64x64.html</a></td></tr>
+
+<tr><td>17</td><td>tiled8</td><td>&#10003;</td><td>4720</td><td></td><td><a href="tiled8-64x64.html">tiled8-64x64.html</a></td></tr>
+
+<tr><td>18</td><td>tiled16</td><td>&#10003;</td><td>4720</td><td></td><td><a href="tiled16-64x64.html">tiled16-64x64.html</a></td></tr>
+
+<tr><td>19</td><td>row-wise</td><td>&#10003;</td><td>4720</td><td></td><td><a href="row-wise-64x64.html">row-wise-64x64.html</a></td></tr>
+
+</table>
+
+</body></html>
