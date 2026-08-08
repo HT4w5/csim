@@ -1,0 +1,13 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>transpose</title></head><body>
+<h1>Transpose solutions</h1>
+<p>cache: s={{.S}} E={{.E}} b={{.B}}</p>
+{{range .Groups}}
+<h2>{{.Rows}}x{{.Cols}}</h2>
+<table border="1" cellpadding="6" cellspacing="0">
+<tr><th>#</th><th>name</th><th>valid</th><th>misses</th><th>error</th><th>report</th></tr>
+{{range $i, $s := .Solutions}}
+<tr><td>{{add $i}}</td><td>{{$s.Name}}</td><td>{{if $s.Valid}}&#10003;{{else}}&#10007;{{end}}</td><td>{{$s.Misses}}</td><td>{{$s.Error}}</td><td><a href="{{$s.Link}}">{{$s.Link}}</a></td></tr>
+{{end}}
+</table>
+{{end}}
+</body></html>
