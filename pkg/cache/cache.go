@@ -200,6 +200,20 @@ func (sim *Simulator) Access(address uint64, size int) (hits int, misses int, ev
 	return
 }
 
+func (sim *Simulator) Size() int {
+	return (1 << sim.cfg.SetIndexBits) * (1 << sim.cfg.BlockOffsetBits) * sim.cfg.LinesPerSet
+}
+
+// NumSets returns the number of sets in the cache.
+func (sim *Simulator) NumSets() int {
+	return 1 << sim.cfg.SetIndexBits
+}
+
+// LinesPerSet returns the associativity (number of lines per set) of the cache.
+func (sim *Simulator) LinesPerSet() int {
+	return sim.cfg.LinesPerSet
+}
+
 type HMEStats struct {
 	Hits      int
 	Misses    int
